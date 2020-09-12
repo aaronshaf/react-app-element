@@ -8,9 +8,14 @@ class ReactApp extends HTMLElement {
 
   attributeChangedCallback(_name, _oldValue, newValue) {
     const App = React.lazy(() => import(newValue));
+    const attrs = Object.fromEntries(
+      Array.from(this.attributes)
+        .filter((attr) => attr.nodeName !== 'src')
+        .map((attr) => [attr.nodeName, attr.value]),
+    );
     ReactDOM.render(
       <Suspense fallback={<div></div>}>
-        <App />
+        <App {...attrs} />
       </Suspense>,
       this,
     );
