@@ -7,9 +7,10 @@ function App() {
   return (
     <div className="App">
       <div className="App-inner">
-        <button onClick={() => setCount(count + 1)}>Increase</button>
+        <button onClick={() => setCount(count + 1)}>Press me</button>
         <div>{count}</div>
       </div>
+      <div className="hint">Psssst. View my source.</div>
     </div>
   );
 }

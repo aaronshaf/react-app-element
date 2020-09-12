@@ -3,14 +3,21 @@
   height: 200px;
   padding: 8px;
   display: flex;
+  flex-direction: column;
 }
 
 .App-inner {
   flex: 1;
   background-color: #eee;
   padding: 8px;
+  font-size: 1.3rem;
 }
 
 button {
   margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.hint {
+  margin-top: 8px;
 }
