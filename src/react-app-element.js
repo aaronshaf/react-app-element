@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
+import './react-app-element.css';
 
 class ReactApp extends HTMLElement {
   static get observedAttributes() {
