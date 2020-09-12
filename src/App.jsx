@@ -11,6 +11,12 @@ function App() {
         <div>{count}</div>
       </div>
       <div className="hint">Psssst. View my source.</div>
+      <a
+        className="github-link"
+        href="https://github.com/aaronshaf/react-app-element"
+      >
+        GitHub
+      </a>
     </div>
   );
 }

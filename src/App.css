@@ -18,6 +18,7 @@ button {
   font-size: 1.3rem;
 }
 
-.hint {
+.hint,
+.github-link {
   margin-top: 8px;
 }
